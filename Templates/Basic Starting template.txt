@@ -64,6 +64,15 @@ template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i
 template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
 
+/*------------------------- Snippets -----------------------*/
+// Prime Factorization - get factors of a number using sieve
+// sieve - checks weather a number is prime or not
+// power - calc the a power b and also mod it
+// Segment Tree - range based queries
+// DSU - Disjoint set Union , gets number of components
+// maxSubarray - get largest subarray of positive number
+// string_hasing - get the string hash value and match 2 string (rabin karp)
+
 /*-------------------------- SOLVE -------------------------*/
 void solve() 
 {

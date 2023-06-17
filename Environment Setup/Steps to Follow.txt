@@ -1,0 +1,15 @@
+Step 1 - Download mingW and install it
+Step 2 - MingW bin folder path to the enviornment variables
+Step 3 - Download sublime text editor and install it
+Step 4 - Create a folder name Code/Cp on desktop
+Step 5 - Create 2 text file named Output.txt and Input.txt in Code folder
+Step 6 - Open sublime and go to tools -> build system -> new build system
+Step 7 - Paste the sublime build for windows to the build system and save it
+Step 8 - Don't forget to save it with the extension of .sublime-build
+Step 9 - Now create new file in sublime named solution and save it in code folder with cpp extension
+Step 10 - Open output.txt file and Input.txt file in sublime alongside the solution file
+Step 11 - Go to View -> Layout -> Column3 and click on it
+Step 12 - Your screen will be divided in 3 vertical columns 
+Step 13 - let solution.cpp remain in 1st column and drag the Output.txt file to 2nd column and Input.txt file to 3rd column
+Step 14 - click on 3rd coloumn and than go to view -> groups -> max - column 2
+Step 15 - Now write your code in solution file and give input in input file and get output in output.txt file

@@ -1,7 +1,7 @@
-template<typename T>
-vector<bool> Sieve(T N)
+int N=1000001;
+vector<bool> prime(N+1, true);
+void Sieve() //creates prime array and marks true for all prime till 10^6
 {
-    vector<bool> prime(N+1, true);
     prime[0] = prime[1] = false;
     for (int i = 2; i * i <= N; i++) {
         if (prime[i]) {
@@ -9,5 +9,35 @@ vector<bool> Sieve(T N)
                 prime[j] = false;
         }
     }
-    return prime;
+}
+vector<int> generatePrimes(int N) //generates prime till N(N<=10^6) and returns it
+{
+    vector<int>ds;
+    for(int i=2;i<=N;i++)
+    {
+        if(prime[i] == true)
+            ds.push_back(i);
+    }
+    return ds;
+}
+vector<int> SegmentedPrimes(int l,int r)//generates prime number between l and r(r-l<=10^6)
+{
+    vector<int>primes = generatePrimes(sqrt(r));
+    vector<bool>dummy(r-l+1,true);
+    for(auto pr:primes)
+    {
+        int firstMultiple = (l/pr)*pr;
+        if(firstMultiple<l)firstMultiple+=pr;
+        for(int j = max(firstMultiple,pr*pr);j<=r;j+=pr)
+        {
+            dummy[j-l] = 0;
+        }
+    }
+    vector<int>ans;
+    for(int i=l;i<=r;i++)
+    {
+        if(dummy[i-l]==true)
+            ans.push_back(i);
+    }
+    return ans;
 }
