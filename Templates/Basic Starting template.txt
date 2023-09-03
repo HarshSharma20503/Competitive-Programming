@@ -69,15 +69,17 @@ template <class T> void _print(queue<T> q){cerr<<"[ ";while(!q.empty()){_print(q
 template <class T> void _print(stack<T> stk){cerr<<"[ ";while(!stk.empty()){_print(stk.top());stk.pop();cerr<<" ";}cerr<<"]";}
 
 /*------------------------- Snippets -----------------------*/
-// Prime Factorization - get factors of a number using sieve
+// primeFactorization - get factors of a number using sieve
 // sieve - checks weather a number is prime or not
-// power - calc the a power b and also mod it
-// Segment Tree - range based queries
+// generatePrimes - generates primes till 10^6
+// segmentedSieve - checks weather a number is prime btw l and r where r-l <= 10^6
+// segmentedTree_pointUpdate - range based queries
+// segmentedTree_rangeUpdate - range based queries
 // DSU - Disjoint set Union , gets number of components
-// maxSubarray - get largest subarray of positive number
-// string_hasing - get the string hash value and match 2 string (rabin karp)
+// stringMatching_rabinKarp - get the string hash value and match 2 string (rabin karp)
 
 /*-------------------------- SOLVE -------------------------*/
+
 void solve() 
 {
     
