@@ -1,2 +1,8 @@
 C:\MinGW\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits
 run command on terminal -> g++ -std=c++17 stdc++.h
+
+
+find /usr/include -name
+- /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h
+cd /usr/include/x86_64-linux-gnu/c++/11/bits/
+sudo g++ -std=c++14 stdc++.h
