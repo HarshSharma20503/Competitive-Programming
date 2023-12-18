@@ -69,10 +69,8 @@ template <class T> void _print(queue<T> q){cerr<<"[ ";while(!q.empty()){_print(q
 template <class T> void _print(stack<T> stk){cerr<<"[ ";while(!stk.empty()){_print(stk.top());stk.pop();cerr<<" ";}cerr<<"]";}
 
 /*------------------------- Snippets -----------------------*/
-// primeFactorization - get factors of a number using sieve
+// primeFactorization - get factors of a number using sieve and generate prime
 // sieve - checks weather a number is prime or not
-// generatePrimes - generates primes till 10^6
-// segmentedSieve - checks weather a number is prime btw l and r where r-l <= 10^6
 // segmentedTree_pointUpdate - range based queries
 // segmentedTree_rangeUpdate - range based queries
 // DSU - Disjoint set Union , gets number of components
